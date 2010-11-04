@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>SkyPad</title>
+	<meta name="apple-mobile-web-app-capable" content="yes">
+	<meta name="viewport" content="width=device-width" />
+	<meta name="apple-mobile-web-app-status-bar-style" content="black" />
+	<link rel="stylesheet" href="styles.css">
+	<script src="http://code.jquery.com/jquery.min.js" type="text/javascript"></script>
+	<script type="text/javascript" src="iscroll-min.js" charset="utf-8" async defer></script>
+	<script language="javascript" type="text/javascript" src="skyPad.js"></script>
+	<script type="text/javascript">
+		var sideBar;
+		var mainContent;
+		
+		function loaded() {
+			document.addEventListener('touchmove', function (e) { e.preventDefault(); }, false);
+			sideBar = new iScroll('sbresults');
+			mainContent = new iScroll('mcontent');
+			
+			// Open Database!
+			SkyPadDatabase.init();
+		}
+		
+		document.addEventListener('DOMContentLoaded', loaded);
+	</script>
+</head>
+<body>
+	<div id="wrapper">
+		<header>
+			<nav>
+				<article id="skypad"><a href="#">SkyPad</a></article>
+				<!-- Temporary removal (no assets to support currently)
+				<article id="navsettings"><a href="#">Settings</a></article>
+				<article id="navexport"><a href="#">Export</a></article>
+				-->
+			</nav>
+		</header>
+		<aside>
+			<section id="sbtop">
+				<article id="sbaddnew">
+					<a><h1>Add New Page</h1></a>
+				</article>
+				<article class="nocursor">
+					<input type="text" name="search" value="Search..." class="search" id="search"><input type="submit" name="Submit" value="" class="submitsearch">
+				</article>
+				<article class="nocursor">
+					<p>Search Results For...</p>
+					<h1 id="keyword"></h1>
+					<a id="xresults"><span>X</span></a>
+				</article>
+			</section>
+			<div id="resultwrap">
+				<section id="sbresults">
+				</section>
+			</div>
+		</aside>
+		<section class="carea" id="editcarea">
+			<form action="#" method="post" accept-charset="utf-8">
+				<div>
+					<input name="title" id="ctitle">
+					<input type="submit" name="Save" value="" id="save">
+				</div>
+				<div id="editcontent">
+					<div class="wcontent">
+						<section id="econtent">
+							<textarea name="ccontent" id="ccontent">
+							</textarea>
+						</section>
+					</div>
+				</div>
+				<div>
+					<a id="canceledit">Cancel Edit</a>
+					<a id="trash"><span>Delete</span></a>
+				</div>
+			</form>
+		</section>
+		<section class="carea" id="viewcarea">
+			<div>
+				<h1 id="viewtitle"></h1>
+				<a id="edit" style="display:none;"><span>Edit</span></a>
+			</div>
+			<div id="viewcontent">
+				<div class="wcontent">
+					<section id="mcontent">
+					</section>
+				</div>
+			</div>
+		</section>
+	</div>
+</body>
+</html>

@@ -1,0 +1,306 @@
+/* @override http://fiveoh3.com/skypad/styles.css */
+/* setup */
+* {
+	margin: 0;
+	padding: 0;
+	outline: none;
+	font-family: Helvetica, Geneva, sans-serif;
+	-webkit-appearance: none;
+}
+html, aside section article a, #sbaddnew a, #ccontent {
+	width: 100%;
+	height: 100%;
+}
+html, header, nav, #sbresults article a, #sbresults article {
+	width: 100%;
+}
+aside section article, #sbresults article, #sbtop article, aside, #sbtop, #sbresults article, #sbtop article, #sbresults {
+	width: 300px;
+}
+header, footer, aside, nav, article, aside section article a, #sbaddnew a, aside a, nav article a, #xresults {  
+    display: block;  
+}
+aside, label.search, input.search, input.submitsearch, #xresults, #resultwrap, .carea, .carea div h1, #save, #edit, #viewcontent, #editcontent, #econtent, #trash, #ctitle, .wcontent {
+	position: absolute;	
+}
+#sbaddnew, aside section article {
+	position: relative;
+}
+li {
+	list-style-type: none;
+}
+body {
+	font-size: 10pt;
+	padding-bottom: 44px;
+}
+#wrapper {
+	min-width: 768px;
+}
+a > span {
+	visibility: hidden;
+	display: none;
+}
+a {
+	text-decoration: none;
+	cursor: pointer;
+}
+header, nav {
+	height: 50px;
+	background-color: #252525;
+}
+nav article {
+	float: right;
+	height: 50px;
+	border-left: 1px solid #7f7f7f;
+}
+nav article a {
+	line-height: 50px;
+	color: #fff;
+}
+#skypad {
+	float: left;
+	border: none;
+}
+#skypad a {
+	font-size: 24px;
+	padding: 0 16px;
+}
+#navexport a, #navsettings a {
+	padding: 0 16px 0 44px;
+	font-size: 18px;
+}
+#navexport {
+	background: url(images/export.png) no-repeat 16px center;
+}
+#navsettings {
+	background: url(images/settings.png) no-repeat 16px center;
+}
+aside {
+	left: 0px;
+	bottom: 0px;
+	top: 50px;
+}
+aside a {
+	color: #252525;
+}
+#sbtop {
+	min-height: 64px;
+}
+#sbaddnew {
+	background: url(images/add.png) no-repeat 260px center;
+	font-size: 8px;
+	text-decoration: none;
+}
+aside section article {
+	height: 64px;
+	line-height: 64px;
+}
+#sbtop article h1 {
+	font-size: 24px;
+}
+#sbtop article h1, #sbtop .nocursor h1 {
+	padding-left: 12px;
+}
+#sbtop .nocursor h1 {
+	font-size: 20px;
+	line-height: 20px;
+}
+label.search {
+	font-size: 20px;
+	line-height: 20px;
+	top:23px;
+	height: 22px;
+	left: 22px;
+	-webkit-user-select: none;
+	display: none;
+}
+input.search {
+	background: none;
+	border: 1px solid #999;
+	height: 22px;
+	padding: 4px;
+	left: 16px;
+	top: 16px;
+	width: 216px;
+	font-size: 20px;
+	line-height: 20px;
+	-webkit-appearance: none;
+}
+input.submitsearch {
+	width: 56px;
+	height: 64px;
+	border: none;
+	right: 0;
+	top: 0;
+	background: url(images/search.png) no-repeat center center;
+}
+input.submitsearch:hover {
+	cursor: pointer;
+}
+#sbtop article p {
+	line-height: 20px;
+	padding-top: 8px;
+	padding-left: 12px;
+}
+#xresults {
+	width: 56px;
+	height: 64px;
+	right: 0;
+	top: 0;
+	background: url(images/remove.png) no-repeat center center;
+}
+#sbresults article, #sbtop article {
+	background-color: #f2f2f2;
+	height: 64px;
+}
+#sbtop article:nth-child(even), #sbresults article:nth-child(odd) {
+	background-color: #e6e6e6;
+}
+#resultwrap {
+	bottom: 0;
+	left: 0;
+	top: 192px;
+	overflow: hidden;
+}
+#sbresults article h1 {
+	font-size: 22px;
+	font-weight: normal;
+	font-style: normal;
+	width: 268px;
+	line-height: 22px;
+	padding: 12px 0 0 12px;
+}
+#sbresults article p {
+	font-size: 12px;
+	line-height: 12px;
+	width: 268px;
+	padding: 6px 0 0 12px;
+	-webkit-user-select: none;
+}
+.carea {
+	left: 300px;
+	right: 0px;
+	display: block;
+	bottom: 0px;
+	top: 50px;
+	min-width: 468px;
+	background-color: #fff;
+}
+.carea > div, .carea > form > div:nth-child(1), .carea > form > div:nth-child(3) {
+	position: absolute;
+	left: 32px;
+	right: 16px;
+	border: 1px solid #999;
+	padding: 0 16px;
+}
+.carea > div:nth-child(1), .carea > form > div:nth-child(1) {
+	top: 16px;
+	height: 58px;
+}
+.carea textarea + div, .carea > form > div:nth-child(3) {
+	bottom: 0px;
+	height: 58px;
+	border: none;
+	line-height: 58px;
+	padding: 0;
+}
+.carea div h1 {
+	font-size: 38px;
+	line-height: 58px;
+	left: 16px;
+	bottom: 0;
+	right: 76px;
+	font-weight: bold;
+}
+#edit, #save {
+	height: 58px;
+	width: 58px;
+	border: none;
+	background-color: #fff;
+	border-left-style: solid;
+	border-left-color: #999;
+	border-left-width: 1px;
+	display: block;
+	right: 0;
+	top: 0;
+	-webkit-border-radius:0px;
+	background-repeat: no-repeat;
+	background-position: center center;
+}
+#edit {
+	background-image: url(images/edit.png);
+}
+#save {
+	background-image: url(images/save.png);
+	right: 1px;
+}
+#canceledit {
+	color: #000;
+	border-bottom: 1px solid #000;
+	font-size: 14px;
+	padding-bottom: 3px;
+}
+#trash {
+	height: 58px;
+	width: 58px;
+	display: block;
+	right: 0;
+	bottom: 0;
+	background: url(images/delete.png) no-repeat center center;
+}
+#ctitle {
+	font-size: 38px;
+	line-height: 58px;
+	height: 58px;
+	left: 15px;
+	top: 0;
+	right: 76px;
+	border: 0;
+	font-weight: bold;
+	bottom: 0;
+}
+#mcontent {
+	font-size: 14px;
+	float: left;
+}
+#mcontent p {
+	margin-bottom: 16px;
+	background-color: white;
+}
+#sbresults article.selected {
+	background-color: #b3b3b3;
+}
+#sbresults article a:hover, #sbresults article a:active, #sbresults article a:focus {
+	background-color: #b3b3b3;
+}
+#viewcontent, #editcontent {
+	top: 92px;
+	bottom: 58px;
+	padding: 0px;
+	left: 32px;
+	right: 16px;
+	border: 1px solid #999;
+	overflow: hidden;
+}
+#econtent {
+	border: none;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	top: 0;
+}
+#ccontent {
+	overflow: auto;
+	border: 0px;
+	font-size: 14px;
+	z-index: 100;
+	padding: 0;
+	margin: 0;
+}
+.wcontent {
+	bottom: 16px;
+	top: 16px;
+	left: 16px;
+	right: 16px;
+	overflow: hidden;
+}
