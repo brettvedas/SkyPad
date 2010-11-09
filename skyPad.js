@@ -265,7 +265,7 @@ $(document).ready(function(){
 	});
 	
 	$('#save').mousedown(function() {
-		if ($("#ctitle").val().trim().length > 0 && $("#ccontent").val().trim().length > 0) {
+		if ($("#ctitle").val().length > 0 && $("#ccontent").val().length > 0) {
 			myNote.title = $("#ctitle").val();
 			myNote.body = $("#ccontent").val();
 			
